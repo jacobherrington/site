@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Custom Domain Site</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #333; }
-    p { color: #777; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Herrington</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
+<style>
+  body>header {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  body>footer {
+    margin-top: 0;
+  }
+</style>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This is a simple HTML page served from GitHub Pages with a custom domain.</p>
+  <header>
+    <h1>Jacob Herrington</h1>
+    <p>software and startups</p>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>I’m Jacob Herrington, a Ruby developer turned startup founder. My team and I recently launched <a href="https://ordinalforgov.com">Ordinal</a> to solve hidden process problems directly hurting our society. </p> 
+      <p>Over the last decade, I’ve trained with brilliant engineers and entrepreneurs working at scrappy startups, but also the world's largest corporations.</p>
+      <p>I believe in collaboration and community over competition and bring that same philosophy to my technical projects. I'd love to collaborate with you as well.</p>
+    </section>
+    <section id="connect" aria-labelledby="connect-heading">
+      <h2 id="connect-heading">Connect</h2>
+      <p></p>
+      <span>
+        <a href="https://bsky.app/profile/jacobherrington.dev" aria-label="Bluesky"><button type="button">Bluesky</button></a>
+        <a href="https://www.linkedin.com/in/jacobherrington" aria-label="LinkedIn"><button type="button">LinkedIn</button></a>
+        <a href="https://github.com/jacobherrington" aria-label="GitHub"><button type="button">GitHub</button></a>
+        <a href="https://devpath.fm" aria-label="Devpath.fm Podcast (old)"><button type="button">Devpath.fm Podcast (old)</button></a>
+        <a href="https://dev.to/jacobherrington" aria-label="Dev.to Articles (old)"><button type="button">Dev.to Articles (old)</button></a>
+        <a href="#" aria-label="Blog (wip)"><button type="button" disabled="true">Blog (wip)</button></a>
+      </span>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jacob Herrington. All rights reserved.</p>
+  </footer>
 </body>
 </html>
